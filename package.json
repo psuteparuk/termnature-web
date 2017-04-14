@@ -1,0 +1,23 @@
+{
+  "name": "termnature-web",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Main website for Termnature",
+  "scripts": {
+    "build:assets": "gulp",
+    "start": "npm run watch:assets",
+    "watch:assets": "gulp watch:src"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-hash": "^4.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "require-dir": "^0.3.1"
+  }
+}
