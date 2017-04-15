@@ -21,6 +21,11 @@ gulp.task('compile:css', ['clean:css'], () => {
 
   const sassOptions = {
     errLogToConsole: !config.IS_PROD,
+    importer: (url, prev, done) => {
+      if (url[0] === '~') url = path.resolve('node_modules', url.substr(1));
+      else if (url[0] === '@') url = path.resolve('node_modules', url);
+      return { file: url };
+    },
     outputStyle: config.IS_PROD ? 'compressed' : 'expanded',
   };
 
