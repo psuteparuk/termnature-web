@@ -9,3 +9,8 @@ exports.cssPath = {
   sourceDir: path.resolve(__dirname, '..', 'src'),
   staticDir: path.resolve(__dirname, '..', 'static'),
 };
+
+exports.imagesPath = {
+  sourceDir: path.resolve(__dirname, '..', 'src'),
+  staticDir: path.resolve(__dirname, '..', 'static'),
+};

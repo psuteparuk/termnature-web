@@ -6,8 +6,8 @@ requireDir('./tasks');
 
 gulp.task('default', ['build:src']);
 
-gulp.task('watch:src', ['watch:css'], () => {
+gulp.task('watch:src', ['watch:css', 'watch:images'], () => {
   gutil.log('Watch for changes to src folder ...');
 });
 
-gulp.task('build:src', ['compile:css']);
+gulp.task('build:src', ['compile:css', 'copy:images']);

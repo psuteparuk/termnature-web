@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
   <head>
+    {{ partial "meta.html" . }}
+
     <title>{{ .Title }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
     {{ .Hugo.Generator }}
 
-    <!-- <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/logo.jpg"> -->
     <link rel="canonical" href="{{ .Permalink }}">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"> -->
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="{{ delimit (index .Site.Data.css.hash "main.css" | default "main.css" | slice "css") "/" | relURL }}">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"> -->
+    <script src="https://use.fontawesome.com/8776c4c1e7.js"></script>
     {{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />{{ end }}
 
-    <!-- <link rel="apple-touch-icon" href="image/favicon-57.png"/> -->
-    <!-- <link rel="apple-touch-icon" sizes="72x72" href="image/favicon-72.png"/> -->
-    <!-- <link rel="apple-touch-icon" sizes="114x114" href="image/favicon-114.png"/> -->
+    {{ partial "icons.html" . }}
   </head>
   <body>
     <main>

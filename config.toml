@@ -2,7 +2,9 @@ baseURL = "https://termnature.com/"
 languageCode = "en-us"
 title = "Termnature"
 canonifyURLs = true
-copyright = "Copyright &copy; 2017 Termnature"
+copyright = "Copyright &copy; 2017 Termnature Industry Co., Ltd."
+keywords = ""
 
 [params]
+  author = "Termnature Industry Co., Ltd."
   description = "Termnature - We make healthy and delicious snacks with 100% natural ingredients."

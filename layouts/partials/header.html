@@ -1,0 +1,31 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button
+    class="navbar-toggler navbar-toggler-right"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbar-supported-content"
+    aria-control="navbar-supported-content"
+    aria-expanded="false"
+    aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a class="navbar-brand" href="{{ .Site.BaseURL }}">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbar-supported-content">
+    <ul class="navbar-nav justify-content-end">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ .Site.BaseURL }}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ "about" | relURL }}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
