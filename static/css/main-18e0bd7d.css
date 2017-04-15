@@ -8904,3 +8904,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important;
   }
 }
+
+button:focus {
+  outline: 2px auto #975f4b;
+}

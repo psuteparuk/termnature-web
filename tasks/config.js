@@ -14,3 +14,9 @@ exports.imagesPath = {
   sourceDir: path.resolve(__dirname, '..', 'src'),
   staticDir: path.resolve(__dirname, '..', 'static'),
 };
+
+exports.jsPath = {
+  dataDir: path.resolve(__dirname, '..', 'data'),
+  sourceDir: path.resolve(__dirname, '..', 'src'),
+  staticDir: path.resolve(__dirname, '..', 'static'),
+};
