@@ -1,3 +1,5 @@
+{{ $productList := where .Data.Pages "Section" "product" }}
+
 {{ partial "head.html" . }}
 
 {{ partial "header.html" . }}
@@ -5,27 +7,27 @@
 <div id="tn-carousel-cover" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#tn-carousel-cover" data-slide-to="0" class="border-primary border-left-0 border-right-0 rounded-circle active"></li>
-    <li data-target="#tn-carousel-cover" data-slide-to="1" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
-    <li data-target="#tn-carousel-cover" data-slide-to="2" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
-    <li data-target="#tn-carousel-cover" data-slide-to="3" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
+    {{ range $index, $element := $productList }}
+    <li data-target="#tn-carousel-cover" data-slide-to="{{ add $index 1 }}" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
+    {{ end }}
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <div class="tn-cover" style="background-image: url('{{ "images/cover-small.jpg" | relURL }}');">
-      </div>
+      <div class="tn-cover" style="background-image: url('{{ "images/all-flavors-cover.jpg" | relURL }}');"></div>
     </div>
+    {{ range $productList }}
     <div class="carousel-item">
-      <div class="tn-cover" style="background-image: url('{{ "images/chocolate-cover.jpg" | relURL }}');">
+      <div class="tn-cover" style="background-image: url('{{ .Params.homecoverimage | relURL }}');"></div>
+      <div class="full-span-absolute">
+        <div class="d-flex flex-row h-100">
+          <div class="ml-auto align-self-center w-50 text-center">
+            <span>{{ .Params.homecaption1 }}</span>
+            <span>{{ .Params.homecaption2 }}</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <div class="tn-cover" style="background-image: url('{{ "images/tomyum-cover.jpg" | relURL }}');">
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="tn-cover" style="background-image: url('{{ "images/seaweed-cover.jpg" | relURL }}');">
-      </div>
-    </div>
+    {{ end }}
   </div>
 </div>
 

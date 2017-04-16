@@ -1,6 +1,6 @@
 <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
   <button
-    class="navbar-toggler navbar-toggler-right border-0 my-1 px-1"
+    class="navbar-toggler navbar-toggler-right border-0 my-2 p-1"
     type="button"
     role="button"
     data-toggle="collapse"
@@ -9,33 +9,43 @@
     aria-expanded="false"
     aria-label="Toggle Navigation">
     <span><i class="fa fa-bars fa-lg align-middle"></i></span>
-    <!-- <span class="navbar-toggler-icon"></span> -->
   </button>
 
   <a class="navbar-brand d-table" href="{{ .Site.BaseURL }}">
     <div class="d-table-cell align-middle">
       <div class="tn-avatar-container tn-avatar-medium">
-        <img class="tn-avatar-cell tn-avatar-logo" src="{{ "images/transparent.png" | relURL }}" alt="logo">
+        <img class="tn-avatar-cell tn-avatar-logo rounded" src="{{ "images/transparent.png" | relURL }}" alt="logo">
       </div>
     </div>
     <div class="d-table-cell align-middle">
-      <span class="px-2">{{ .Title }}</span>
+      <span class="px-2">{{ .Site.Title }}</span>
     </div>
   </a>
 
   <div class="collapse navbar-collapse" id="tn-navbar-supported-content">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link text-center" href="{{ .Site.BaseURL }}">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item{{ if .IsHome }} active{{ end }}">
+        <a class="nav-link text-center" href="{{ .Site.BaseURL }}">
+          <span>Home</span>
+          {{ if .IsHome }}<span class="sr-only">(current)</span>{{ end }}
+        </a>
+      </li>
+      <li class="nav-item{{ if eq .Section "about" }} active{{ end }}">
+        <a class="nav-link text-center" href="{{ "about" | relURL }}">
+          <span>About</span>
+          {{ if eq .Section "about" }}<span class="sr-only">(current)</span>{{ end }}
+        </a>
+      </li>
+      <li class="nav-item{{ if eq .Section "product" }} active{{ end }}">
+        <a class="nav-link text-center" href="{{ "product" | relURL }}">
+          <span>Products</span>
+          {{ if eq .Section "about" }}<span class="sr-only">(current)</span>{{ end }}
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-center" href="{{ "about" | relURL }}">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-center" href="#">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-center" href="#">Contact Us</a>
+        <a class="nav-link text-center" href="#">
+          <span>Contact Us</span>
+        </a>
       </li>
     </ul>
   </div>

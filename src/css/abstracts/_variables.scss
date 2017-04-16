@@ -17,8 +17,15 @@ $gray-light: $color-silver;
 $gray-lighter: $color-gallery;
 $gray-lightest: $color-alabaster;
 
+$golden-ratio: 1.618;
+
+// Carousel
+
 $carousel-indicator-height: 1rem;
 
-$navbar-padding-y: 1rem;
+// Navbar
 
-$golden-ratio: 1.618;
+$navbar-inverse-color: rgba($brand-accent, .5);
+$navbar-inverse-hover-color: rgba($brand-accent, .75);
+$navbar-inverse-active-color: rgba($brand-accent, 1);
+$navbar-inverse-disabled-color: rgba($brand-accent, .25);
