@@ -18,5 +18,5 @@ gulp.task('copy:images', ['clean:images'], () => {
 });
 
 gulp.task('watch:images', ['copy:images'], () => {
-  gulp.watch(path.join(sourceDir, '**/*'), { interval: config.watchIntervals }, ['copy:images']);
+  gulp.watch('**/*', { cwd: sourceDir, interval: config.watchIntervals }, ['copy:images']);
 });

@@ -2,4 +2,31 @@
 
 {{ partial "header.html" . }}
 
+<div id="tn-carousel-cover" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#tn-carousel-cover" data-slide-to="0" class="border-primary border-left-0 border-right-0 rounded-circle active"></li>
+    <li data-target="#tn-carousel-cover" data-slide-to="1" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
+    <li data-target="#tn-carousel-cover" data-slide-to="2" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
+    <li data-target="#tn-carousel-cover" data-slide-to="3" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="tn-cover" style="background-image: url('{{ "images/cover-small.jpg" | relURL }}');">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="tn-cover" style="background-image: url('{{ "images/chocolate-cover.jpg" | relURL }}');">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="tn-cover" style="background-image: url('{{ "images/tomyum-cover.jpg" | relURL }}');">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="tn-cover" style="background-image: url('{{ "images/seaweed-cover.jpg" | relURL }}');">
+      </div>
+    </div>
+  </div>
+</div>
+
 {{ partial "foot.html" . }}

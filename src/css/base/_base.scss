@@ -1,0 +1,11 @@
+.border-default {
+  border: $border-width solid $body-color;
+}
+
+.border-primary {
+  border: $border-width solid $brand-primary;
+}
+
+.border-accent {
+  border: $border-width solid $brand-accent;
+}

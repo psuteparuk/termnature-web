@@ -45,5 +45,5 @@ gulp.task('compile:css', ['clean:css'], () => {
 });
 
 gulp.task('watch:css', ['compile:css'], () => {
-  gulp.watch(path.join(sourceDir, '**/*.scss'), { interval: config.watchIntervals }, ['compile:css']);
+  gulp.watch('**/*.scss', { cwd: sourceDir, interval: config.watchIntervals }, ['compile:css']);
 });

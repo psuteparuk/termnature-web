@@ -46,5 +46,5 @@ gulp.task('build:js', ['clean:js'], () => {
 });
 
 gulp.task('watch:js', ['build:js'], () => {
-  gulp.watch(path.join(sourceDir, '**/*.js'), { interval: config.watchIntervals }, ['build:js']);
+  gulp.watch('**/*.js', { cwd: sourceDir, interval: config.watchIntervals }, ['build:js']);
 });
