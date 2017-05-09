@@ -4,31 +4,53 @@
 
 {{ partial "header.html" . }}
 
-<div id="tn-carousel-cover" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#tn-carousel-cover" data-slide-to="0" class="border-primary border-left-0 border-right-0 rounded-circle active"></li>
-    {{ range $index, $element := $productList }}
-    <li data-target="#tn-carousel-cover" data-slide-to="{{ add $index 1 }}" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
-    {{ end }}
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <div class="tn-cover" style="background-image: url('{{ "images/all-flavors-cover.jpg" | relURL }}');"></div>
-    </div>
-    {{ range $productList }}
-    <div class="carousel-item">
-      <div class="tn-cover" style="background-image: url('{{ .Params.homecoverimage | relURL }}');"></div>
-      <div class="full-span-absolute">
-        <div class="d-flex flex-row h-100">
-          <div class="ml-auto align-self-center w-50 text-center">
-            <span>{{ .Params.homecaption1 }}</span>
-            <span>{{ .Params.homecaption2 }}</span>
+<div class="bg-primary">
+  <div class="container py-4">
+    <div id="tn-carousel-cover" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#tn-carousel-cover" data-slide-to="0" class="border-primary border-left-0 border-right-0 rounded-circle active"></li>
+        {{ range $index, $element := $productList }}
+        <li data-target="#tn-carousel-cover" data-slide-to="{{ add $index 1 }}" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
+        {{ end }}
+      </ol>
+      <div class="tn-carousel-inner carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="tn-cover" style="background-image: url('{{ "images/all-flavors-cover.jpg" | relURL }}');"></div>
+        </div>
+        {{ range $productList }}
+        <div class="carousel-item">
+          <div class="tn-cover" style="background-image: url('{{ .Params.homecoverimage | relURL }}');"></div>
+          <div class="full-span-absolute">
+            <div class="d-flex flex-row h-100">
+              <div class="ml-auto align-self-center w-50 text-center">
+                <div class="h1">{{ .Params.homecaption1 }}</div>
+                <div class="h1">{{ .Params.homecaption2 }}</div>
+              </div>
+            </div>
           </div>
         </div>
+        {{ end }}
       </div>
     </div>
-    {{ end }}
   </div>
 </div>
+
+{{ with .Site.GetPage "section" "rice-germ" }}
+<div class="bg-tertiary">
+  <div class="container py-4">
+    <div class="h1 pb-4 text-center">{{ .Title }}</div>
+    <div class="row">
+      <div class="col-sm-4 col-md-6">
+        <div class="w-50 ml-auto mr-auto">
+          <img class="w-100" src="{{ .Params.image }}" alt="What is Rice Germ?">
+        </div>
+      </div>
+      <div class="col-sm-8 col-md-6">
+        <div class="h3">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
 
 {{ partial "foot.html" . }}

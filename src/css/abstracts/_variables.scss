@@ -1,5 +1,6 @@
 $color-santa-fe: #A86A53;
 $color-sweet-corn: #F7E67E;
+$color-tropical-blue: #B9E6F5;
 $color-mine-shaft: #212121;
 $color-boulder: #757575;
 $color-silver: #BDBDBD;
@@ -9,6 +10,7 @@ $color-alabaster: #FAFAFA;
 $brand-primary: $color-santa-fe;
 $brand-primary-dark: darken($brand-primary, 5%);
 $brand-accent: $color-sweet-corn;
+$brand-tertiary: $color-tropical-blue;
 $body-bg: $color-alabaster;
 
 $gray-dark: $color-mine-shaft;
@@ -18,6 +20,10 @@ $gray-lighter: $color-gallery;
 $gray-lightest: $color-alabaster;
 
 $golden-ratio: 1.618;
+
+// Shadow
+
+$enable-shadows: true;
 
 // Carousel
 
