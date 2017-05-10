@@ -1,52 +1,56 @@
-<nav class="tn-navbar navbar navbar-toggleable-md navbar-inverse bg-primary">
-  <button
-    class="navbar-toggler navbar-toggler-right border-0 my-2 p-1"
-    type="button"
-    role="button"
-    data-toggle="collapse"
-    data-target="#tn-navbar-supported-content"
-    aria-controls="tn-navbar-supported-content"
-    aria-expanded="false"
-    aria-label="Toggle Navigation">
-    <span><i class="fa fa-bars fa-lg align-middle"></i></span>
-  </button>
+<div class="container">
+  <nav class="navbar navbar-toggleable-md navbar-light">
+    <button
+      class="navbar-toggler navbar-toggler-right border-0 my-2 p-1 text-primary"
+      type="button"
+      role="button"
+      data-toggle="collapse"
+      data-target="#tn-navbar-supported-content"
+      aria-controls="tn-navbar-supported-content"
+      aria-expanded="false"
+      aria-label="Toggle Navigation">
+      <span><i class="fa fa-bars fa-lg align-middle"></i></span>
+    </button>
 
-  <a class="navbar-brand d-table" href="{{ .Site.BaseURL }}">
-    <div class="d-table-cell align-middle">
-      <div class="tn-avatar-container tn-avatar-medium">
-        <img class="tn-avatar-cell tn-avatar-logo rounded" src="{{ "images/transparent.png" | relURL }}" alt="logo">
+    <a class="navbar-brand d-table" href="{{ .Site.BaseURL }}">
+      <div class="d-table-cell align-middle">
+        <div class="tn-avatar-container tn-avatar-medium">
+          <img class="tn-avatar-cell tn-avatar-logo rounded" src="{{ "images/transparent.png" | relURL }}" alt="logo">
+        </div>
       </div>
-    </div>
-    <div class="d-table-cell align-middle">
-      <span class="px-2">{{ .Site.Title }}</span>
-    </div>
-  </a>
+      <div class="d-table-cell align-middle">
+        <span class="px-2">{{ .Site.Title }}</span>
+      </div>
+    </a>
 
-  <div class="collapse navbar-collapse" id="tn-navbar-supported-content">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item{{ if .IsHome }} active{{ end }}">
-        <a class="nav-link text-center" href="{{ .Site.BaseURL }}">
-          <span>Home</span>
-          {{ if .IsHome }}<span class="sr-only">(current)</span>{{ end }}
-        </a>
-      </li>
-      <li class="nav-item{{ if eq .Section "about" }} active{{ end }}">
-        <a class="nav-link text-center" href="{{ "about" | relURL }}">
-          <span>About</span>
-          {{ if eq .Section "about" }}<span class="sr-only">(current)</span>{{ end }}
-        </a>
-      </li>
-      <li class="nav-item{{ if eq .Section "product" }} active{{ end }}">
-        <a class="nav-link text-center" href="{{ "product" | relURL }}">
-          <span>Product</span>
-          {{ if eq .Section "product" }}<span class="sr-only">(current)</span>{{ end }}
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-center" href="#">
-          <span>Contact Us</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse" id="tn-navbar-supported-content">
+      <ul class="navbar-nav ml-auto">
+        <li class="tn-nav-item nav-item{{ if .IsHome }} active{{ end }}">
+          <a class="nav-link text-center" href="{{ .Site.BaseURL }}">
+            <span>Home</span>
+            {{ if .IsHome }}<span class="sr-only">(current)</span>{{ end }}
+          </a>
+        </li>
+        <li class="tn-nav-item nav-item{{ if eq .Section "about" }} active{{ end }}">
+          <a class="nav-link text-center" href="{{ "about" | relURL }}">
+            <span>About</span>
+            {{ if eq .Section "about" }}<span class="sr-only">(current)</span>{{ end }}
+          </a>
+        </li>
+        <li class="tn-nav-item nav-item{{ if eq .Section "product" }} active{{ end }}">
+          <a class="nav-link text-center" href="{{ "product" | relURL }}">
+            <span>Product</span>
+            {{ if eq .Section "product" }}<span class="sr-only">(current)</span>{{ end }}
+          </a>
+        </li>
+        <li class="tn-nav-item nav-item">
+          <a class="nav-link text-center" href="#">
+            <span>Contact Us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  {{ if not .IsHome }}<hr class="mt-0">{{ end }}
+</div>

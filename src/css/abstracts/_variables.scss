@@ -21,6 +21,12 @@ $gray-lightest: $color-alabaster;
 
 $golden-ratio: 1.618;
 
+// Font
+
+$font-family-sans-serif: "Pridi", sans-serif;
+$font-family-serif: "Vollkorn", serif;
+$font-family-base: $font-family-serif, $font-family-sans-serif;
+
 // Shadow
 
 $enable-shadows: true;
@@ -35,3 +41,7 @@ $navbar-inverse-color: rgba($brand-accent, .5);
 $navbar-inverse-hover-color: rgba($brand-accent, .75);
 $navbar-inverse-active-color: rgba($brand-accent, 1);
 $navbar-inverse-disabled-color: rgba($brand-accent, .25);
+
+// Hr
+
+$hr-border-width: 2px;

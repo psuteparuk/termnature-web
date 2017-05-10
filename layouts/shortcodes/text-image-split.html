@@ -1,0 +1,27 @@
+{{ $imageSrc := .Get "image-src" }}
+{{ $imageAlt := .Get "image-alt" }}
+{{ $imageSize := .Get "image-size" | default "100" }}
+{{ $imagePosition := .Get "image-position" | default "left" }}
+
+<div class="row">
+  {{ if eq $imagePosition "left" }}
+  <div class="col-sm-4 col-md-6">
+  {{ else if eq $imagePosition "right" }}
+  <div class="col-sm-4 push-sm-8 col-md-6 push-md-6">
+  {{ else }}
+  <div class="col-12">
+  {{ end }}
+    <div class="ml-auto mr-auto" style="width: {{ print $imageSize "%" }};">
+      <img class="w-100" src="{{ $imageSrc | relURL }}" alt="{{ $imageAlt }}">
+    </div>
+  </div>
+  {{ if eq $imagePosition "left" }}
+  <div class="col-sm-8 col-md-6">
+  {{ else if eq $imagePosition "right" }}
+  <div class="col-sm-8 pull-sm-4 col-md-6 pull-md-6">
+  {{ else }}
+  <div class="col-12">
+  {{ end }}
+    {{ .Inner }}
+  </div>
+</div>

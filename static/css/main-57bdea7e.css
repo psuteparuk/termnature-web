@@ -331,7 +331,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Vollkorn", serif, "Pridi", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -590,7 +590,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 small,
@@ -5391,7 +5391,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Vollkorn", serif, "Pridi", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5495,7 +5495,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Vollkorn", serif, "Pridi", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -9068,6 +9068,6 @@ button:focus {
   }
 }
 
-.tn-navbar {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.tn-nav-item.active {
+  font-weight: bold;
 }
