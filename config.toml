@@ -1,4 +1,4 @@
-baseURL = "https://termnature.com/"
+baseURL = "https://termnature.github.io/termnature-web/"
 languageCode = "en-us"
 title = "Termnature"
 canonifyURLs = true
