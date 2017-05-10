@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>จมูกข้าวคืออะไร on Termnature</title>
-    <link>https://termnature.com/rice-germ/</link>
+    <link>https://termnature.github.io/termnature-web/rice-germ/</link>
     <description>Recent content in จมูกข้าวคืออะไร on Termnature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2017 Termnature Industry Co., Ltd.</copyright>
     <lastBuildDate>Wed, 10 May 2017 01:21:21 +0700</lastBuildDate>
     
-	<atom:link href="https://termnature.com/rice-germ/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://termnature.github.io/termnature-web/rice-germ/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
