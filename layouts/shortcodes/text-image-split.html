@@ -5,22 +5,22 @@
 
 <div class="row">
   {{ if eq $imagePosition "left" }}
-  <div class="col-sm-4 col-md-6">
+  <div class="col-md-4 py-2">
   {{ else if eq $imagePosition "right" }}
-  <div class="col-sm-4 push-sm-8 col-md-6 push-md-6">
+  <div class="col-md-4 push-md-8 py-2">
   {{ else }}
-  <div class="col-12">
+  <div class="col-12 py-2">
   {{ end }}
     <div class="ml-auto mr-auto" style="width: {{ print $imageSize "%" }};">
       <img class="w-100" src="{{ $imageSrc | relURL }}" alt="{{ $imageAlt }}">
     </div>
   </div>
   {{ if eq $imagePosition "left" }}
-  <div class="col-sm-8 col-md-6">
+  <div class="col-md-8 py-2">
   {{ else if eq $imagePosition "right" }}
-  <div class="col-sm-8 pull-sm-4 col-md-6 pull-md-6">
+  <div class="col-md-8 pull-md-4 py-2">
   {{ else }}
-  <div class="col-12">
+  <div class="col-12 py-2">
   {{ end }}
     {{ .Inner }}
   </div>

@@ -1,0 +1,51 @@
+<footer>
+  <div class="container">
+    <hr>
+
+    <div class="py-5 text-center">
+      <!-- Social Icons -->
+      {{ with .Site.Params.dribbble }}
+      <a class="tn-social-link" href="https://dribbble.com/{{ . }}" target="_blank" title="Find us on Dribble"><i class="tn-social-icon dribbble"></i></a>
+      {{ end }}
+      {{ with .Site.Params.facebook }}
+      <a class="tn-social-link" href="https://www.facebook.com/{{ . }}" target="_blank" title="Find us on Facebook"><i class="tn-social-icon facebook"></i></a>
+      {{ end }}
+      {{ with .Site.Params.flickr }}
+      <a class="tn-social-link" href="https://www.flickr.com/{{ . }}" target="_blank" title="Find us on Flickr"><i class="tn-social-icon flickr"></i></a>
+      {{ end }}
+      {{ with .Site.Params.github }}
+      <a class="tn-social-link" href="https://github.com/{{ . }}" target="_blank" title="Find us on GitHub"><i class="tn-social-icon github"></i></a>
+      {{ end }}
+      {{ with .Site.Params.instagram }}
+      <a class="tn-social-link" href="https://instagram.com/{{ . }}" target="_blank" title="Find us on Instagram"><i class="tn-social-icon instagram"></i></a>
+      {{ end }}
+      {{ with .Site.Params.linkedin }}
+      <a class="tn-social-link" href="https://www.linkedin.com/in/{{ . }}" target="_blank" title="Find us on LinkedIn"><i class="tn-social-icon linkedin"></i></a>
+      {{ end }}
+      {{ with .Site.Params.twitter }}
+      <a class="tn-social-link" href="https://www.twitter.com/{{ . }}" target="_blank" title="Find us on Twitter"><i class="tn-social-icon twitter"></i></a>
+      {{ end }}
+      {{ with .Site.Params.email }}
+      <a class="tn-social-link" href="mailto:{{ . }}" target="_blank" title="Email us"><i class="tn-social-icon email"></i></a>
+      {{ end }}
+      {{ with .Site.Params.pinterest }}
+      <a href="https://www.pinterest.com/{{ . }}" target="_blank" title="Find us on Pinterest"><i class="tn-social-icon pinterest"></i></a>
+      {{ end }}
+      {{ with .Site.Params.rss }}
+      <a class="tn-social-link" href="{{ "feed.xml" | relURL }}" target="_blank"><i class="tn-social-icon rss"></i></a>
+      {{ end }}
+      {{ with .Site.Params.stackoverflow }}
+      <a class="tn-social-link" href="http://stackoverflow.com/{{ . }}" target="_blank" title="Find us on Stack Overflow"><i class="tn-social-icon stackoverflow"></i></a>
+      {{ end }}
+      {{ with .Site.Params.youtube }}
+      <a class="tn-social-link" href="https://youtube.com/{{ . }}" target="_blank" title="Find us on Youtube"><i class="tn-social-icon youtube"></i></a>
+      {{ end }}
+      {{ with .Site.Params.googleplus }}
+      <a class="tn-social-link" href="https://plus.google.com/{{ . }}" target="_blank" title="Find us on Google Plus"><i class="tn-social-icon googleplus"></i></a>
+      {{ end }}
+
+      <!-- Copyright -->
+      <p>{{ .Site.Copyright | htmlUnescape }}</p>
+    </div>
+  </div>
+</footer>

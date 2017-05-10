@@ -5,7 +5,7 @@
 {{ partial "header.html" . }}
 
 <div class="bg-primary">
-  <div class="container py-4">
+  <div class="container py-5">
     <div id="tn-carousel-cover" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#tn-carousel-cover" data-slide-to="0" class="border-primary border-left-0 border-right-0 rounded-circle active"></li>
@@ -37,7 +37,7 @@
 
 {{ with .Site.GetPage "section" "rice-germ" }}
 <div class="bg-tertiary">
-  <div class="container py-4">
+  <div class="container py-5">
     <div class="h1 pb-4 text-center">{{ .Title }}</div>
     {{ .Content }}
   </div>
@@ -46,7 +46,7 @@
 
 {{ with .Site.GetPage "section" "process" }}
 <div class="bg-accent">
-  <div class="container py-4">
+  <div class="container py-5">
     <div class="h1 pb-4 text-center">{{ .Title }}</div>
     {{ .Content }}
   </div>
@@ -55,12 +55,14 @@
 
 {{ with .Site.GetPage "section" "health-benefit" }}
 <div>
-  <div class="container py-4 text-center">
+  <div class="container py-5 text-center">
     <div class="d-inline-block">
       {{ .Content }}
     </div>
   </div>
 </div>
 {{ end }}
+
+{{ partial "footer.html" . }}
 
 {{ partial "foot.html" . }}
