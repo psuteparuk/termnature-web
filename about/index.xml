@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Us on Termnature</title>
+    <link>https://termnature.com/about/</link>
+    <description>Recent content in About Us on Termnature</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2017 Termnature Industry Co., Ltd.</copyright>
+    <lastBuildDate>Thu, 13 Apr 2017 03:56:30 +0700</lastBuildDate>
+    
+	<atom:link href="https://termnature.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
