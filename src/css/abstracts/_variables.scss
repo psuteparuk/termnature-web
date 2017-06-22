@@ -6,6 +6,7 @@ $color-boulder: #757575;
 $color-silver: #BDBDBD;
 $color-gallery: #EEEEEE;
 $color-alabaster: #FAFAFA;
+$color-white: #FFFFFF;
 
 $brand-primary: $color-santa-fe;
 $brand-primary-dark: darken($brand-primary, 5%);
@@ -23,9 +24,8 @@ $golden-ratio: 1.618;
 
 // Font
 
-$font-family-sans-serif: "Pridi", sans-serif;
-$font-family-serif: "Vollkorn", serif;
-$font-family-base: $font-family-serif, $font-family-sans-serif;
+$font-family-sans-serif: "Montserrat", "Pridi", sans-serif;
+$font-family-base: $font-family-sans-serif;
 
 // Shadow
 

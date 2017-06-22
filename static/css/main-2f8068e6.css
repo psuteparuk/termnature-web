@@ -331,7 +331,7 @@ html {
 }
 
 body {
-  font-family: "Vollkorn", serif, "Pridi", sans-serif;
+  font-family: "Montserrat", "Pridi", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -5391,7 +5391,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Vollkorn", serif, "Pridi", sans-serif;
+  font-family: "Montserrat", "Pridi", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5495,7 +5495,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Vollkorn", serif, "Pridi", sans-serif;
+  font-family: "Montserrat", "Pridi", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8977,6 +8977,10 @@ button:focus {
   background-color: #B9E6F5;
 }
 
+.bg-gray-lighter {
+  background-color: #EEEEEE;
+}
+
 .border-default {
   border: 1px solid #212121;
 }
@@ -8989,6 +8993,37 @@ button:focus {
   border: 1px solid #F7E67E;
 }
 
+.btn-accent {
+  color: #212121;
+  background-color: #F7E67E;
+  border-color: #F7E67E;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-accent:hover {
+  color: #212121;
+  background-color: #f4dd4e;
+  border-color: #f3db44;
+}
+
+.btn-accent:focus, .btn-accent.focus {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 2px rgba(247, 230, 126, 0.5);
+}
+
+.btn-accent.disabled, .btn-accent:disabled {
+  background-color: #F7E67E;
+  border-color: #F7E67E;
+}
+
+.btn-accent:active, .btn-accent.active,
+.show > .btn-accent.dropdown-toggle {
+  color: #212121;
+  background-color: #f4dd4e;
+  background-image: none;
+  border-color: #f3db44;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
 .full-span-absolute {
   position: absolute;
   top: 0;
@@ -8999,6 +9034,18 @@ button:focus {
 
 .text-accent {
   color: #F7E67E;
+}
+
+.text-outline-primary {
+  text-shadow: -1px -1px 0 rgba(168, 106, 83, 0.618047), 1px -1px 0 rgba(168, 106, 83, 0.618047), -1px 1px 0 rgba(168, 106, 83, 0.618047), 1px 1px 0 rgba(168, 106, 83, 0.618047);
+}
+
+.text-outline-accent {
+  text-shadow: -1px -1px 0 rgba(247, 230, 126, 0.618047), 1px -1px 0 rgba(247, 230, 126, 0.618047), -1px 1px 0 rgba(247, 230, 126, 0.618047), 1px 1px 0 rgba(247, 230, 126, 0.618047);
+}
+
+.text-outline-white {
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.618047), 1px -1px 0 rgba(255, 255, 255, 0.618047), -1px 1px 0 rgba(255, 255, 255, 0.618047), 1px 1px 0 rgba(255, 255, 255, 0.618047);
 }
 
 .tn-avatar-container {
@@ -9070,6 +9117,35 @@ button:focus {
   .tn-cover {
     padding: 20em 0;
   }
+}
+
+.tn-cover-top {
+  background-size: cover;
+  background-position: center 60%;
+  width: 100%;
+  padding: 0 0 16em 0;
+}
+
+@media (min-width: 768px) {
+  .tn-cover-top {
+    padding: 0 0 24em 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .tn-cover-top {
+    padding: 0 0 32em 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tn-cover-top {
+    padding: 0 0 40em 0;
+  }
+}
+
+.tn-navbar {
+  background-color: rgba(33, 33, 33, 0.05);
 }
 
 .tn-social-icon {

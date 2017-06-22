@@ -2,9 +2,21 @@
 
 {{ partial "head.html" . }}
 
-{{ partial "header.html" . }}
+<div class="tn-cover-top" style="background-image: url('{{ "images/all-flavors-cover.jpg" | absURL }}');">
+  {{ partial "header.html" . }}
 
-<div class="bg-primary">
+  <div class="p-4 text-center">
+    <span class="d-inline-block h1 p-2 text-white bg-primary">{{ .Site.Params.slogan }}</span>
+    <br>
+    <span class="d-inline-block p-2">{{ .Site.Params.subSlogan | lower }}</span>
+    <br>
+    <div class="text-center">
+      <a class="btn btn-primary btn-lg" href="{{ "product" | relURL }}" role="button">Shop Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-lighter">
   <div class="container py-5">
     <div id="tn-carousel-cover" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -36,7 +48,7 @@
 </div>
 
 {{ with .Site.GetPage "section" "rice-germ" }}
-<div class="bg-accent">
+<div class="">
   <div class="container py-5">
     <div class="h1 pb-4 text-center">{{ .Title }}</div>
     {{ .Content }}
@@ -45,7 +57,7 @@
 {{ end }}
 
 {{ with .Site.GetPage "section" "process" }}
-<div class="bg-primary text-white">
+<div class="bg-gray-lighter">
   <div class="container py-5">
     <div class="h1 pb-4 text-center">{{ .Title }}</div>
     {{ .Content }}
@@ -54,7 +66,7 @@
 {{ end }}
 
 {{ with .Site.GetPage "section" "health-benefit" }}
-<div class="bg-accent">
+<div class="">
   <div class="container py-5 text-center">
     <div class="d-inline-block">
       {{ .Content }}

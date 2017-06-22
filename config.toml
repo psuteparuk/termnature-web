@@ -7,7 +7,9 @@ keywords = ""
 
 [params]
   author = "Termnature Industry Co., Ltd."
-  description = "Termnature - We make healthy and delicious snacks with 100% natural ingredients."
+  description = "Termnature - Enjoy every healthy bite"
+  slogan = "Enjoy every healthy bite"
+  subSlogan = "We make healthy and delicious snacks with 100% natural ingredients"
   facebook = "termnature"
   instagram = "termnature"
   email = "termnature@gmail.com"
