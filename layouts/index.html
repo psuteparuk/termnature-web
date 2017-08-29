@@ -2,17 +2,13 @@
 
 {{ partial "head.html" . }}
 
-<div class="tn-cover-top" style="background-image: url('{{ "images/all-flavors-cover.jpg" | absURL }}');">
-  {{ partial "header.html" . }}
-
-  <div class="p-4 text-center">
-    <span class="d-inline-block h1 p-2 text-white bg-primary">{{ .Site.Params.slogan }}</span>
-    <br>
-    <span class="d-inline-block p-2">{{ .Site.Params.subSlogan | lower }}</span>
-    <br>
-    <div class="text-center">
-      <a class="btn btn-primary btn-lg" href="{{ "product" | relURL }}" role="button">Shop Now</a>
-    </div>
+<div class="p-4 text-center">
+  <span class="d-inline-block h1 p-2 text-white bg-primary">{{ .Site.Params.slogan }}</span>
+  <br>
+  <span class="d-inline-block p-2">{{ .Site.Params.subSlogan | lower }}</span>
+  <br>
+  <div class="text-center">
+    <a class="btn btn-primary btn-lg" href="{{ "product" | relURL }}" role="button">Shop Now</a>
   </div>
 </div>
 
@@ -74,7 +70,5 @@
   </div>
 </div>
 {{ end }}
-
-{{ partial "footer.html" . }}
 
 {{ partial "foot.html" . }}

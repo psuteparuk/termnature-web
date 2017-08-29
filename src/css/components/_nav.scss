@@ -1,3 +1,24 @@
-.tn-navbar {
-  background-color: rgba($gray-dark, 0.05);
+.tn-toolbar-title-section {
+  align-items: center;
+
+  .tn-toolbar-menu-icon {
+    @include mdc-layout-grid-media-query_('desktop') {
+      display: none;
+    }
+
+    @include mdc-layout-grid-media-query_('tablet') {
+      display: none;
+    }
+  }
+}
+
+.tn-nav-bar {
+  @include mdc-layout-grid-media-query_('phone') {
+    display: none;
+  }
+}
+
+.tn-nav-icon {
+  width: auto;
+  height: auto;
 }

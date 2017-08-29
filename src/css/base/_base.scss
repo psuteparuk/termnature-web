@@ -1,74 +1,13 @@
-// background
-
-.bg-primary-dark {
-  background-color: $brand-primary-dark;
+html, body {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.bg-accent {
-  background-color: $brand-accent;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-.bg-tertiary {
-  background-color: $brand-tertiary;
-}
-
-.bg-gray-lighter {
-  background-color: $gray-lighter;
-}
-
-// border
-
-.border-default {
-  border: $border-width solid $body-color;
-}
-
-.border-primary {
-  border: $border-width solid $brand-primary;
-}
-
-.border-accent {
-  border: $border-width solid $brand-accent;
-}
-
-// button
-
-.btn-accent {
-  @include button-variant($body-color, $brand-accent, $brand-accent);
-}
-
-// full-span absolute
-
-.full-span-absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-// text
-
-.text-accent {
-  color: $brand-accent;
-}
-
-.text-outline-primary {
-  text-shadow: -1px -1px 0 rgba($brand-primary, 1/$golden-ratio),
-  1px -1px 0 rgba($brand-primary, 1/$golden-ratio),
-  -1px 1px 0 rgba($brand-primary, 1/$golden-ratio),
-  1px 1px 0 rgba($brand-primary, 1/$golden-ratio);
-}
-
-.text-outline-accent {
-  text-shadow: -1px -1px 0 rgba($brand-accent, 1/$golden-ratio),
-  1px -1px 0 rgba($brand-accent, 1/$golden-ratio),
-  -1px 1px 0 rgba($brand-accent, 1/$golden-ratio),
-  1px 1px 0 rgba($brand-accent, 1/$golden-ratio);
-}
-
-.text-outline-white {
-  text-shadow: -1px -1px 0 rgba($color-white, 1/$golden-ratio),
-  1px -1px 0 rgba($color-white, 1/$golden-ratio),
-  -1px 1px 0 rgba($color-white, 1/$golden-ratio),
-  1px 1px 0 rgba($color-white, 1/$golden-ratio);
+.margin-auto-horizontal {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,0 +1,29 @@
+<aside class="mdc-temporary-drawer mdc-typography">
+  <nav class="mdc-temporary-drawer__drawer">
+    <div class="mdc-temporary-drawer__toolbar-spacer mdc-theme--primary-bg">
+      <div class="tn-avatar-container tn-avatar-large margin-auto-horizontal">
+        <img class="tn-avatar-cell tn-avatar-logo rounded" src="{{ "images/transparent.png" | relURL }}" alt="{{ .Site.Title }}" title="{{ .Site.Title }}">
+      </div>
+    </div>
+    <nav class="mdc-temporary-drawer__content mdc-list">
+      <a
+        href="{{ .Site.BaseURL }}"
+        class="mdc-list-item{{ if .IsHome }} mdc-temporary-drawer--selected{{ end }}">
+        <i class="tn-nav-icon mdc-list-item__start-detail fa fa-home" aria-hidden="true"></i>
+        <span class="mdc-typography--button">Home</span>
+      </a>
+      <a
+        href="{{ "about" | relURL }}"
+        class="mdc-list-item{{ if eq .Section "about" }} mdc-temporary-drawer--selected{{ end }}">
+        <i class="tn-nav-icon mdc-list-item__start-detail fa fa-list-ul" aria-hidden="true"></i>
+        <span class="mdc-typography--button">About</span>
+      </a>
+      <a
+        href="{{ "product" | relURL }}"
+        class="mdc-list-item{{ if eq .Section "product" }} mdc-temporary-drawer--selected{{ end }}">
+        <i class="tn-nav-icon mdc-list-item__start-detail fa fa-shopping-bag" aria-hidden="true"></i>
+        <span class="mdc-typography--button">Product</span>
+      </a>
+    </nav>
+  </nav>
+</aside>

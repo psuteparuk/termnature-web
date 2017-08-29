@@ -1,3 +1,7 @@
     </main>
+
+    {{ partial "footer.html" . }}
+
+    <script src="{{ delimit (index .Site.Data.js.hash "bundle.js" | default "bundle.js" | slice "js") "/" | relURL }}"></script>
   </body>
 </html>

@@ -8,11 +8,9 @@ $color-gallery: #EEEEEE;
 $color-alabaster: #FAFAFA;
 $color-white: #FFFFFF;
 
-$brand-primary: $color-santa-fe;
-$brand-primary-dark: darken($brand-primary, 5%);
-$brand-accent: $color-sweet-corn;
-$brand-tertiary: $color-tropical-blue;
-$body-bg: $color-alabaster;
+$mdc-theme-primary: $color-santa-fe;
+$mdc-theme-secondary: $color-sweet-corn;
+$mdc-theme-background: $color-alabaster;
 
 $gray-dark: $color-mine-shaft;
 $gray: $color-boulder;
@@ -24,29 +22,4 @@ $golden-ratio: 1.618;
 
 // Font
 
-$font-family-sans-serif: "Montserrat", "Pridi", sans-serif;
-$font-family-base: $font-family-sans-serif;
-
-// Shadow
-
-$enable-shadows: true;
-
-// Carousel
-
-$carousel-indicator-height: 1rem;
-
-// Navbar
-
-$navbar-inverse-color: rgba($brand-accent, .5);
-$navbar-inverse-hover-color: rgba($brand-accent, .75);
-$navbar-inverse-active-color: rgba($brand-accent, 1);
-$navbar-inverse-disabled-color: rgba($brand-accent, .25);
-
-$navbar-light-color: rgba($brand-primary, .5);
-$navbar-light-hover-color: rgba($brand-primary, .75);
-$navbar-light-active-color: rgba($brand-primary, 1);
-$navbar-light-disabled-color: rgba($brand-primary, .25);
-
-// Hr
-
-$hr-border-width: 2px;
+$mdc-typography-font-family: Roboto, Pridi, sans-serif;

@@ -23,7 +23,9 @@ gulp.task('clean:js', () => {
 gulp.task('build:js', ['clean:js'], () => {
   const browserifyOptions = {
     entries: path.join(sourceDir, mainFile),
-    transform: [babelify],
+    transform: [
+      [babelify, { presets: ['es2015', 'stage-0'] }],
+    ],
   };
 
   const uglifyOptions = { 

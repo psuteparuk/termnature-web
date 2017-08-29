@@ -1,50 +1,35 @@
-<div class="{{ if .IsHome }}tn-navbar{{ end }}">
-  <div class="container">
-    <nav class="navbar navbar-toggleable-md navbar-light">
-      <button
-        class="navbar-toggler navbar-toggler-right border-0 my-2 p-1 text-primary"
-        type="button"
-        role="button"
-        data-toggle="collapse"
-        data-target="#tn-navbar-supported-content"
-        aria-controls="tn-navbar-supported-content"
-        aria-expanded="false"
-        aria-label="Toggle Navigation">
-        <span><i class="fa fa-bars fa-lg align-middle"></i></span>
-      </button>
-
-      <a class="navbar-brand d-table" href="{{ .Site.BaseURL }}">
-        <div class="d-table-cell align-middle">
-          <div class="tn-avatar-container tn-avatar-medium">
-            <img class="tn-avatar-cell tn-avatar-logo rounded" src="{{ "images/transparent.png" | relURL }}" alt="logo">
-          </div>
-        </div>
-        <div class="d-table-cell align-middle">
-          <span class="px-2 h5">{{ .Site.Title }}</span>
+<header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
+  <div class="mdc-toolbar__row">
+    <section class="tn-toolbar-title-section mdc-toolbar__section mdc-toolbar__section--align-start">
+      <i class="tn-toolbar-menu-icon mdc-toolbar__icon--menu fa fa-bars" aria-hidden="true"></i>
+      <a href="{{ .Site.BaseURL }}" class="tn-toolbar-title mdc-toolbar__title mdc-theme--text-primary-on-primary">
+        <div class="tn-avatar-container tn-avatar-large">
+          <img class="tn-avatar-cell tn-avatar-logo rounded" src="{{ "images/transparent.png" | relURL }}" alt="{{ .Site.Title }}" title="{{ .Site.Title }}">
         </div>
       </a>
-
-      <div class="collapse navbar-collapse" id="tn-navbar-supported-content">
-        <ul class="navbar-nav ml-auto">
-          <li class="tn-nav-item nav-item{{ if eq .Section "product" }} active{{ end }}">
-            <a class="nav-link text-center" href="{{ "product" | relURL }}">
-              <span class="h6">Product</span>
-              {{ if eq .Section "product" }}<span class="sr-only">(current)</span>{{ end }}
-            </a>
-          </li>
-          <li class="tn-nav-item nav-item{{ if eq .Section "about" }} active{{ end }}">
-            <a class="nav-link text-center" href="{{ "about" | relURL }}">
-              <span class="h6">About</span>
-              {{ if eq .Section "about" }}<span class="sr-only">(current)</span>{{ end }}
-            </a>
-          </li>
-          <li class="tn-nav-item nav-item">
-            <a class="nav-link text-center" href="#">
-              <span class="h6">Contact Us</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    </section>
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+      <nav class="tn-nav-bar mdc-tab-bar mdc-tab-bar--icons-with-text mdc-tab-bar--indicator-secondary">
+        <a
+          href="{{ .Site.BaseURL }}"
+          class="tn-nav-tab mdc-tab mdc-tab--icons-with-text{{ if .IsHome }} mdc-tab--active{{ end }}">
+          <i class="mdc-tab__icons fa fa-home" aria-hidden="true"></i>
+          <span class="mdc-tab__icon-text">Home</span>
+        </a>
+        <a
+          href="{{ "about" | relURL }}"
+          class="tn-nav-tab mdc-tab mdc-tab--icons-with-text{{ if eq .Section "about" }} mdc-tab--active{{ end }}">
+          <i class="tn-nav-icon mdc-tab__icons fa fa-list-ul" aria-hidden="true"></i>
+          <span class="mdc-tab__icon-text">About</span>
+        </a>
+        <a
+          href="{{ "product" | relURL }}"
+          class="tn-nav-tab mdc-tab mdc-tab--icons-with-text{{ if eq .Section "product" }} mdc-tab--active{{ end }}">
+          <i class="tn-nav-icon mdc-tab__icons fa fa-shopping-bag" aria-hidden="true"></i>
+          <span class="mdc-tab__icon-text">Product</span>
+        </a>
+        <span class="mdc-tab-bar__indicator"></span>
+      </nav>
+    </section>
   </div>
-</div>
+</header>
