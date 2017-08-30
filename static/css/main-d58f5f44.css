@@ -14984,6 +14984,10 @@ a:hover, a:focus {
   width: 100%;
 }
 
+.full-height {
+  height: 100%;
+}
+
 @media (min-width: 840px) {
   .margin-default {
     margin: 24px;
@@ -15185,6 +15189,16 @@ a:hover, a:focus {
 
 .tn-avatar-logo {
   background-image: url("../images/logo.jpg");
+}
+
+.tn-headline {
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+  .tn-headline {
+    text-align: left;
+  }
 }
 
 .tn-toolbar-title-section {

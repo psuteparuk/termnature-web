@@ -1,6 +1,6 @@
 +++
 homecaption1 = ""
 homecaption2 = ""
-homecoverimage = ""
+productimage = ""
 showonhome = false
 +++

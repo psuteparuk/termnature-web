@@ -1,7 +1,9 @@
+import { Button } from './button';
 import { Toolbar } from './toolbar';
 
 const Main = {
   init: () => {
+    Button.init();
     Toolbar.init();
   },
 };

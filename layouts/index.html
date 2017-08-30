@@ -1,74 +1,93 @@
 {{ $productList := where .Data.Pages "Section" "product" }}
+{{ $processList := where .Data.Pages "Section" "process" }}
 
 {{ partial "head.html" . }}
 
-<div class="p-4 text-center">
-  <span class="d-inline-block h1 p-2 text-white bg-primary">{{ .Site.Params.slogan }}</span>
-  <br>
-  <span class="d-inline-block p-2">{{ .Site.Params.subSlogan | lower }}</span>
-  <br>
-  <div class="text-center">
-    <a class="btn btn-primary btn-lg" href="{{ "product" | relURL }}" role="button">Shop Now</a>
-  </div>
-</div>
+<!-- Headline -->
 
-<div class="bg-gray-lighter">
-  <div class="container py-5">
-    <div id="tn-carousel-cover" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#tn-carousel-cover" data-slide-to="0" class="border-primary border-left-0 border-right-0 rounded-circle active"></li>
-        {{ range $index, $element := $productList }}
-        <li data-target="#tn-carousel-cover" data-slide-to="{{ add $index 1 }}" class="border-primary border-left-0 border-right-0 rounded-circle"></li>
-        {{ end }}
-      </ol>
-      <div class="tn-carousel-inner carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="tn-cover" style="background-image: url('{{ "images/all-flavors-cover.jpg" | absURL }}');"></div>
-        </div>
-        {{ range $productList }}
-        <div class="carousel-item">
-          <div class="tn-cover" style="background-image: url('{{ .Params.homecoverimage | absURL }}');"></div>
-          <div class="full-span-absolute">
-            <div class="d-flex flex-row h-100">
-              <div class="ml-auto align-self-center w-50 text-center">
-                <div class="h1">{{ .Params.homecaption1 }}</div>
-                <div class="h1">{{ .Params.homecaption2 }}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop tn-headline">
+      <div class="mdc-typography--display3 mdc-theme--primary">{{ .Site.Params.slogan }}</div>
+      <p class="mdc-typography--headline">{{ .Site.Params.subSlogan }}</p>
+      <a href="{{ "product" | relURL }}" class="mdc-button mdc-button--primary mdc-button--raised">Shop Now</a>
+    </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop text-center">
+      <img src="http://via.placeholder.com/500x350">
     </div>
   </div>
 </div>
 
+<!-- Products -->
+
+<div class="mdc-layout-grid">
+  <div class="mdc-typography--display1 mdc-theme--primary margin-default-vertical text-center">Our Products</div>
+  <div class="mdc-layout-grid__inner">
+    {{ range $productList }}
+    {{ if .Params.showonhome }}
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet text-center">
+      <div>
+        <a href="#"><img class="full-height" src="{{ .Params.productimage }}" alt="{{ .Title }}" title="{{ .Title }}"></a>
+      </div>
+      <p class="mdc-typography--caption"><a href="#">{{ .Title }}</a></p>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+<!-- What is Rice Germ -->
+
 {{ with .Site.GetPage "section" "rice-germ" }}
-<div class="">
-  <div class="container py-5">
-    <div class="h1 pb-4 text-center">{{ .Title }}</div>
-    {{ .Content }}
-  </div>
-</div>
-{{ end }}
-
-{{ with .Site.GetPage "section" "process" }}
-<div class="bg-gray-lighter">
-  <div class="container py-5">
-    <div class="h1 pb-4 text-center">{{ .Title }}</div>
-    {{ .Content }}
-  </div>
-</div>
-{{ end }}
-
-{{ with .Site.GetPage "section" "health-benefit" }}
-<div class="">
-  <div class="container py-5 text-center">
-    <div class="d-inline-block">
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop text-center">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" title="{{ .Title }}">
+    </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+      <div class="mdc-typography--display1 mdc-theme--primary">{{ .Title }}</div>
       {{ .Content }}
     </div>
   </div>
 </div>
 {{ end }}
+
+<!-- Processes -->
+
+<div class="mdc-layout-grid">
+  <div class="mdc-typography--display1 mdc-theme--primary margin-default-vertical text-center">Our Process</div>
+  <div class="mdc-layout-grid__inner">
+    {{ range $index, $element := $processList }}
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet text-center">
+      <div>
+        <img class="full-height" src="{{ $element.Params.image }}" alt="{{ $element.Title }}" title="{{ $element.Title }}">
+      </div>
+      <p class="mdc-typography--caption">
+        <span>{{ add $index 1 }}</span>
+        <br>
+        <span>{{ $element.Title | upper }}</span>
+      </p>
+      <p class="mdc-typography--caption">{{ $element.Content }}</p>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<!-- Photos -->
+
+<div class="mdc-layout-grid">
+  <div class="mdc-typography--display1 mdc-theme--primary margin-default-vertical text-center">Photos</div>
+  <div class="mdc-grid-list">
+    <ul class="mdc-grid-list__tiles margin-auto-horizontal" style="width: 800px;">
+      {{ range (seq 12) }}
+      <li class="mdc-grid-tile">
+        <div class="mdc-grid-tile__primary">
+          <img class="mdc-grid-tile__primary-content" src="http://via.placeholder.com/100x100">
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
 
 {{ partial "foot.html" . }}

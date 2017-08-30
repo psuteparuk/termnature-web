@@ -1,0 +1,7 @@
+.tn-headline {
+  text-align: center;
+
+  @include mdc-layout-grid-media-query_('desktop') {
+    text-align: left;
+  }
+}
