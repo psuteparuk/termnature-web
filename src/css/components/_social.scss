@@ -1,0 +1,8 @@
+.tn-social-link {
+  color: var(--mdc-theme-text-primary-on-primary, $mdc-theme-primary);
+  text-decoration: none;
+
+  & + .tn-social-link {
+    @extend .margin-default-left;
+  }
+}
