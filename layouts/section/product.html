@@ -1,0 +1,32 @@
+{{ $productSection := (.Site.GetPage "section" "product") }}
+
+{{ partial "head.html" . }}
+
+<div class="mdc-layout-grid">
+  <div class="mdc-typography--display1 mdc-theme--primary margin-default-vertical text-center">{{ .Title }}</div>
+
+  <nav class="tn-product-tab-bar mdc-tab-bar" role="tablist" data-mdc-auto-init="MDCTabBar">
+    {{ range $index, $element := .Sections }}
+    <a
+      role="tab"
+      class="mdc-tab mdc-tab-bar--indicator-secondary{{ if eq $index 0 }} mdc-tab--active{{ end }}"
+      href="#{{ .Type }}"
+      aria-controls="#{{ .Type }}"
+      data-mdc-auto-init="MDCTab">
+      {{ $element.Title }}
+    </a>
+    {{ end }}
+  </nav>
+
+  <div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+        <img src="http://via.placeholder.com/500x350">
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "foot.html" . }}

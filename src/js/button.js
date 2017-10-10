@@ -4,6 +4,9 @@ import {
 
 export const Button = {
   init: () => {
-    MDCRipple.attachTo(document.querySelector('.mdc-button'));
+    const buttons = document.querySelector('.mdc-button');
+    if (buttons) {
+      MDCRipple.attachTo(buttons);
+    }
   }
 };

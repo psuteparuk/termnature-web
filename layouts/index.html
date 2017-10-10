@@ -27,7 +27,7 @@
     {{ if .Params.showonhome }}
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet text-center">
       <div>
-        <a href="#"><img class="full-height" src="{{ .Params.productimage }}" alt="{{ .Title }}" title="{{ .Title }}"></a>
+        <a href="{{ .URL }}"><img class="full-height" src="{{ .Params.productimage }}" alt="{{ .Title }}" title="{{ .Title }}"></a>
       </div>
       <p class="mdc-typography--caption"><a href="#">{{ .Title }}</a></p>
     </div>

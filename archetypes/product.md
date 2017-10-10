@@ -1,6 +1,8 @@
 +++
-homecaption1 = ""
-homecaption2 = ""
+title = "{{ replace .TranslationBaseName "-" " " | title }}"
+date = {{ .Date }}
+draft = true
+caption = []
 productimage = ""
 showonhome = false
 +++

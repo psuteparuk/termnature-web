@@ -11,7 +11,7 @@ export const Toolbar = {
     toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
 
     // add ripple to tabs
-    // MDCRipple.attachTo(document.querySelector('.tn-nav-tab'));
+    // document.querySelectorAll('.tn-nav-tab').forEach(MDCRipple.attachTo);
 
     // Drawer
     const drawer = new MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
