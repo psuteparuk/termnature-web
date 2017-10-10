@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://termnature.github.io/termnature-web/product/chocolate/</loc>
-    <lastmod>2017-04-17T03:04:08+07:00</lastmod>
+    <loc>https://termnature.github.io/termnature-web/product/crispy-rice-germ/chocolate/</loc>
+    <lastmod>2017-08-31T16:17:28+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://termnature.github.io/termnature-web/product/tomyum/</loc>
-    <lastmod>2017-04-17T03:07:36+07:00</lastmod>
+    <loc>https://termnature.github.io/termnature-web/process/step1/</loc>
+    <lastmod>2017-08-30T18:38:36+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://termnature.github.io/termnature-web/product/seaweed/</loc>
-    <lastmod>2017-04-17T03:07:41+07:00</lastmod>
+    <loc>https://termnature.github.io/termnature-web/product/crispy-rice-germ/tomyum/</loc>
+    <lastmod>2017-08-31T16:17:40+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://termnature.github.io/termnature-web/health-benefit/</loc>
-    <lastmod>2017-05-10T11:33:29+07:00</lastmod>
+    <loc>https://termnature.github.io/termnature-web/process/step2/</loc>
+    <lastmod>2017-08-30T18:46:10+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://termnature.github.io/termnature-web/process/</loc>
-    <lastmod>2017-05-10T04:26:17+07:00</lastmod>
+    <loc>https://termnature.github.io/termnature-web/product/crispy-rice-germ/seaweed/</loc>
+    <lastmod>2017-08-31T16:17:35+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://termnature.github.io/termnature-web/process/step3/</loc>
+    <lastmod>2017-08-30T18:47:20+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://termnature.github.io/termnature-web/product/crispy-rice-germ/</loc>
+    <lastmod>2017-08-31T18:49:26+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://termnature.github.io/termnature-web/product/</loc>
+    <lastmod>2017-08-31T02:54:25+07:00</lastmod>
   </url>
   
   <url>
@@ -42,8 +58,8 @@
   </url>
   
   <url>
-    <loc>https://termnature.github.io/termnature-web/product/</loc>
-    <lastmod>2017-04-17T03:04:08+07:00</lastmod>
+    <loc>https://termnature.github.io/termnature-web/process/</loc>
+    <lastmod>2017-08-30T18:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,7 +70,7 @@
   
   <url>
     <loc>https://termnature.github.io/termnature-web/</loc>
-    <lastmod>2017-04-17T03:04:08+07:00</lastmod>
+    <lastmod>2017-08-31T16:17:28+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crispy Rice Germ on Termnature</title>
+    <link>https://termnature.github.io/termnature-web/product/crispy-rice-germ/</link>
+    <description>Recent content in Crispy Rice Germ on Termnature</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2017 Termnature Industry Co., Ltd.</copyright>
+    <lastBuildDate>Thu, 31 Aug 2017 18:49:26 +0700</lastBuildDate>
+    
+	<atom:link href="https://termnature.github.io/termnature-web/product/crispy-rice-germ/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rice Germ Chocolate</title>
+      <link>https://termnature.github.io/termnature-web/product/crispy-rice-germ/chocolate/</link>
+      <pubDate>Thu, 31 Aug 2017 16:17:28 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/product/crispy-rice-germ/chocolate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rice Germ Tomyum</title>
+      <link>https://termnature.github.io/termnature-web/product/crispy-rice-germ/tomyum/</link>
+      <pubDate>Thu, 31 Aug 2017 16:17:40 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/product/crispy-rice-germ/tomyum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rice Germ Seaweed</title>
+      <link>https://termnature.github.io/termnature-web/product/crispy-rice-germ/seaweed/</link>
+      <pubDate>Thu, 31 Aug 2017 16:17:35 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/product/crispy-rice-germ/seaweed/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

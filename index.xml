@@ -7,36 +7,63 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2017 Termnature Industry Co., Ltd.</copyright>
-    <lastBuildDate>Mon, 17 Apr 2017 03:04:08 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 31 Aug 2017 16:17:28 +0700</lastBuildDate>
     
 	<atom:link href="https://termnature.github.io/termnature-web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>chocolate</title>
-      <link>https://termnature.github.io/termnature-web/product/chocolate/</link>
-      <pubDate>Mon, 17 Apr 2017 03:04:08 +0700</pubDate>
+      <title>Rice Germ Chocolate</title>
+      <link>https://termnature.github.io/termnature-web/product/crispy-rice-germ/chocolate/</link>
+      <pubDate>Thu, 31 Aug 2017 16:17:28 +0700</pubDate>
       
-      <guid>https://termnature.github.io/termnature-web/product/chocolate/</guid>
+      <guid>https://termnature.github.io/termnature-web/product/crispy-rice-germ/chocolate/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tomyum</title>
-      <link>https://termnature.github.io/termnature-web/product/tomyum/</link>
-      <pubDate>Mon, 17 Apr 2017 03:07:36 +0700</pubDate>
+      <title>step1</title>
+      <link>https://termnature.github.io/termnature-web/process/step1/</link>
+      <pubDate>Wed, 30 Aug 2017 18:38:36 +0700</pubDate>
       
-      <guid>https://termnature.github.io/termnature-web/product/tomyum/</guid>
+      <guid>https://termnature.github.io/termnature-web/process/step1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione neque fugiat rerum voluptates illo, dolorum distinctio consequuntur sed voluptas accusantium! Eaque laudantium velit accusantium. Maxime aperiam nostrum, ab repudiandae nihil!</description>
+    </item>
+    
+    <item>
+      <title>Rice Germ Tomyum</title>
+      <link>https://termnature.github.io/termnature-web/product/crispy-rice-germ/tomyum/</link>
+      <pubDate>Thu, 31 Aug 2017 16:17:40 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/product/crispy-rice-germ/tomyum/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>seaweed</title>
-      <link>https://termnature.github.io/termnature-web/product/seaweed/</link>
-      <pubDate>Mon, 17 Apr 2017 03:07:41 +0700</pubDate>
+      <title>step2</title>
+      <link>https://termnature.github.io/termnature-web/process/step2/</link>
+      <pubDate>Wed, 30 Aug 2017 18:46:10 +0700</pubDate>
       
-      <guid>https://termnature.github.io/termnature-web/product/seaweed/</guid>
+      <guid>https://termnature.github.io/termnature-web/process/step2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis nesciunt modi numquam, illo nostrum voluptatem, corporis ducimus aperiam, cum quaerat maiores eos? Odit quisquam ipsam error consectetur rem, impedit?</description>
+    </item>
+    
+    <item>
+      <title>Rice Germ Seaweed</title>
+      <link>https://termnature.github.io/termnature-web/product/crispy-rice-germ/seaweed/</link>
+      <pubDate>Thu, 31 Aug 2017 16:17:35 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/product/crispy-rice-germ/seaweed/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>step3</title>
+      <link>https://termnature.github.io/termnature-web/process/step3/</link>
+      <pubDate>Wed, 30 Aug 2017 18:47:20 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/process/step3/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim aliquam deserunt corporis nisi quod impedit ullam in incidunt totam est sunt voluptatibus minima cupiditate, excepturi laboriosam delectus beatae dignissimos!</description>
     </item>
     
   </channel>

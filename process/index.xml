@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ขนมเรามาได้อย่างไร on Termnature</title>
+    <title>Processes on Termnature</title>
     <link>https://termnature.github.io/termnature-web/process/</link>
-    <description>Recent content in ขนมเรามาได้อย่างไร on Termnature</description>
+    <description>Recent content in Processes on Termnature</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2017 Termnature Industry Co., Ltd.</copyright>
-    <lastBuildDate>Wed, 10 May 2017 04:26:17 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 30 Aug 2017 18:38:36 +0700</lastBuildDate>
     
 	<atom:link href="https://termnature.github.io/termnature-web/process/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>step1</title>
+      <link>https://termnature.github.io/termnature-web/process/step1/</link>
+      <pubDate>Wed, 30 Aug 2017 18:38:36 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/process/step1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione neque fugiat rerum voluptates illo, dolorum distinctio consequuntur sed voluptas accusantium! Eaque laudantium velit accusantium. Maxime aperiam nostrum, ab repudiandae nihil!</description>
+    </item>
+    
+    <item>
+      <title>step2</title>
+      <link>https://termnature.github.io/termnature-web/process/step2/</link>
+      <pubDate>Wed, 30 Aug 2017 18:46:10 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/process/step2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis nesciunt modi numquam, illo nostrum voluptatem, corporis ducimus aperiam, cum quaerat maiores eos? Odit quisquam ipsam error consectetur rem, impedit?</description>
+    </item>
+    
+    <item>
+      <title>step3</title>
+      <link>https://termnature.github.io/termnature-web/process/step3/</link>
+      <pubDate>Wed, 30 Aug 2017 18:47:20 +0700</pubDate>
+      
+      <guid>https://termnature.github.io/termnature-web/process/step3/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim aliquam deserunt corporis nisi quod impedit ullam in incidunt totam est sunt voluptatibus minima cupiditate, excepturi laboriosam delectus beatae dignissimos!</description>
+    </item>
     
   </channel>
 </rss>
